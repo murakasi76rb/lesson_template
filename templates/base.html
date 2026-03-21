@@ -12,7 +12,17 @@
     </h2>
 </header>
 <main>
-    {% block content %}{% endblock content %}
+    {% block content %}
+    <p>
+        Name: {{ name }}
+    </p>
+    <p>
+        Age: {{ age }}
+    </p>
+    <p>
+        Email: {{ email }}
+    </p>
+    {% endblock content %}
 </main>
 <footer>
     <p>
