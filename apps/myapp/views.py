@@ -9,4 +9,4 @@ def index(request: HttpRequest) -> HttpResponse:
         'age': 49,
         'email': 'bigun.ruslan@gmail.com'
     }
-    return render(request, 'base.html', context)
+    return render(request, 'myapp/index.html', context)
