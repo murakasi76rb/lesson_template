@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Menu{% endblock title %}
+{% block content %}
+{% if menu %}
+{% for m in menu %}
+<li>{{ m.title }} : {{ m.price }}</li>
+{% endfor %}
+{%  else %}
+<p> Empty list </p>
+{% endif %}
+{% endblock content %}
